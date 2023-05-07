@@ -18,12 +18,12 @@ jobs:
       # 执行依赖安装
       - name: 安装依赖
         run: |
-          pnpm install
+          npm install --legacy-peer-deps
 
       # 执行构建步骤
       - name: 构建
         run: |
-          pnpm run build
+          npm run build
       # 执行部署
       - name: 部署
         uses: JamesIves/github-pages-deploy-action@releases/v3 # 这个action会根据配置自动推送代码到指定分支
