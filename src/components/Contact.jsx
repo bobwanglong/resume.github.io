@@ -33,8 +33,11 @@ const Contact = () => {
     // 发送邮件
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_li77c9p",
+        "template_nooathi",
+        
+        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: 'bob-wang',
@@ -42,7 +45,8 @@ const Contact = () => {
           to_email: 'wanglongtin@163.com',
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "J5DS9rPf6Od1lMFu-"
       )
       .then(
         () => {
