@@ -12,7 +12,10 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
+      className="w-full  p-[1px] rounded-[20px] shadow-card
+      bg-[conic-gradient(from_var(--shimmer-angle),theme(colors.green.400)_0%,theme(colors.pink.100)_0%,theme(colors.green.400)_20%,theme(colors.purple.600))]
+      animate-[shimmer_2.5s_linear_infinite] bor
+      ">
       <div
         // eslint-disable-next-line react/no-unknown-property
         options={{
